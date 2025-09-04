@@ -14,19 +14,19 @@ A simple todo list application built with React, TypeScript, TailwindCSS, and Zu
 
 ```bash
 # Install dependencies
-npm install
+pnpm install
 
 # Start development server
-npm run dev
+pnpm run dev
 
 # Build for production
-npm run build
+pnpm run build
 
 # Run linter
-npm run lint
+pnpm run lint
 
 # Preview production build
-npm run preview
+pnpm run preview
 ```
 
 ## Technology Stack
