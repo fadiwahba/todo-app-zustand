@@ -13,8 +13,8 @@ interface TodoStore {
   todos: Todo[];
   initializeFromServer: () => Promise<void>;
   addTodoAsync: (title: string) => Promise<void>;
-  toggleTodoAsync: (id: number) => Promise<void>;
-  removeTodoAsync: (id: number) => Promise<void>;
+  toggleTodoAsync: (id: number | string) => Promise<void>;
+  removeTodoAsync: (id: number | string) => Promise<void>;
 }
 
 const useTodoStore = create<TodoStore>()(
