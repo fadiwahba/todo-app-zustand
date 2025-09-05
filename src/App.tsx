@@ -1,5 +1,6 @@
 import AddTodo from "./components/add-todo";
 import Todos from "./components/todos";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
             Zustand for state management.
           </h2>
         </div>
-        
+
         <div className="flex w-full flex-col gap-4 sm:gap-6 items-center justify-start rounded-lg border-2 border-white p-4 sm:p-6 lg:p-10 shadow-xl backdrop-blur-md bg-gradient-to-br from-cyan-100 to-orange-100 max-h-[70vh] sm:max-h-[700px] overflow-y-auto">
           <div className="flex flex-col gap-4 w-full">
             <AddTodo />
@@ -23,6 +24,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Analytics />
     </main>
   );
 }
