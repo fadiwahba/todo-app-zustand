@@ -28,11 +28,11 @@ const Todos = () => {
     <>
       <ul className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {todos.length === 0 && (
-          <p className="text-center text-gray-500">No todos yet. Add one!</p>
+          <p className="col-span-4 text-center text-gray-500">No todos yet. Add one!</p>
         )}
         {todos.map((todo) => (
           <li
-            className={`relative w-full flex justify-between items-start max-h-60 overflow-y-auto gap-4 p-4 rounded shadow-sm hover:shadow-lg border-l-8 border-amber-400 bg-amber-100 transition-all ease-in-out duration-300 ${
+            className={`relative w-full flex justify-between items-start max-h-60 overflow-y-auto gap-4 p-4 rounded-md shadow-sm hover:shadow-lg border-l-8 border-amber-400 bg-amber-100 transition-all ease-in-out duration-300 ${
               todo.completed
                 ? "border-green-300 perspective-distant"
                 : "border-amber-400"
